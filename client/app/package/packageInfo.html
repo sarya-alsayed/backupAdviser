@@ -1,0 +1,87 @@
+<div ng-include="'../header.html'">                    
+</div>
+<div class="container main-div animated slideInDown" >
+
+
+<div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-9">
+                <!-- First Blog Post -->
+                <h2>
+                    <a href="#">{{data.packageName}}</a>
+                </h2>
+                <hr>
+<div id="slides_control">
+    <div>
+      <carousel interval="myInterval">
+        <slide ng-repeat="pic in photos " active="slide.active">
+          <img ng-src="{{pic}}" class="imgslider">
+          <!-- <div class="carousel-caption">
+            <h4>Slide {{$index+1}}</h4>
+          </div> -->
+        </slide>
+      </carousel>
+    </div>
+  </div>
+
+                <hr>
+                <h3><p class="text-primary">Tour Description:</p> </h3>
+                <P id="des"></P>
+                <h3><p class="text-primary"> <span class="glyphicon glyphicon-road"></span> Itinerary:</p> </h3>
+                <p id="iter"></p>
+                <h4><p class="text-info"><span class="glyphicon glyphicon-ok-circle"></span> Included:</p> </h4>
+                <p id="include"></p>
+                 <h4><p class="text-info"> <span class="glyphicon glyphicon-remove-circle"></span> Excluded:</p> </h4>
+                <p id="exclude"></p>
+                <h4><p class="text-info"> <span class="glyphicon glyphicon-home"></span> Hotels:</p> </h4>
+                 <table class="table table-bordered">
+                 <tr>
+                 <td width="20px"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"></td>
+                 <td>{{data.threeStarHotels}}</td>
+                 </tr>
+                 <tr>
+                 <td width="20px"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"></td>
+                 <td>{{data.fourStarHotels}}</td>
+                 </tr>
+                 <tr>
+                 <td width="20px"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"></td>
+                 <td>{{data.fiveStarHotels}}</td>
+                 </tr>
+                </table>
+                 <h4><p class="text-info"> <span class="glyphicon glyphicon-time"></span> Duration:</p> </h4>
+                 Days: {{data.days}} / Nights: {{data.nights}}
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-3" >
+                <br/>
+                <br/>
+                <br/>
+                <!-- Blog Categories Well -->
+                <div class="well bg-info">
+                <div style="background-color:#ff80df ; border-color:lightblue; border-width:2px; border-style:dashed ; margin-bottom:6px; padding-top:5px;">
+                   <center>From <h2><span class="text-info">{{data.price}}$</span></h2></center>
+                   </div>
+                   <button class="btn btn-block btn-lg" style="background-color:   #ffcce6; border-color:#fff; border-width:2px;">
+                   <a href="/#/packages/enquiry/{{data.packageName}}/{{data._id}}">Book Now</a></button>
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <p>{{data.outline}}</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+</div>
+
+
+
+
+ <div  ng-include="'../footer.html'">                    
+</div>

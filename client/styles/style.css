@@ -1,0 +1,525 @@
+/*/////// cms style*/
+#cm-nav li a.arrow {background-image:url('../../images/ArrowButton.png');}
+
+ul#cm-nav ,
+ul#cm-nav ul {
+ border-bottom: black 1px solid;
+ list-style-type: none;
+ margin: 0px;
+ list-style-image: none;
+ border-right: black 1px solid;
+ padding: 0px;
+ width:240px;
+}
+
+ul#cm-nav li {
+ position: relative;
+ list-style-type: none;
+ margin: auto;
+ list-style-image: none;
+ padding: 0px;
+
+}
+
+ul#cm-nav li li {
+ width: auto;
+ float: none
+}
+#cm-nav a {
+ text-align: left;
+ border-left: black 1px solid;
+ display: block;
+ font-family: verdana;
+ white-space: nowrap;
+ /*background: #d6d5f0;*/
+ background-image:url('../../images/Button.png');
+ color: black;
+ font-size: 16px;
+ font-family:Verdana;
+ font-weight:bold;
+ border-top: black 1px solid;
+ text-decoration: none;
+ text-align:center;
+ padding-top:15px;
+ height:50px;
+}
+
+#cm-nav a:focus {
+ outline-style: none;
+ outline-color: invert;
+ outline-width: medium
+}
+
+#cm-nav a.no-click {cursor: default}
+
+#cm-nav > li > a ,
+#cm-nav > li > a.arrow {padding-right: 4px}
+
+.arrow-pad#cm-nav > li > a ,
+#cm-nav ul.arrow-pad > li > a {padding-right: 11px}
+
+#cm-nav li a.arrow ,
+#cm-nav > li > a.arrow {
+ background-repeat: no-repeat;
+ background-position: right 50%
+}
+
+#cm-nav li:hover > a {
+ /*background-image:url('../images/Button.png');*/
+ color: white
+}
+
+#cm-nav li ul ,
+#cm-nav li:hover ul ul ,
+#cm-nav li:hover ul ul ul ,
+#cm-nav li:hover ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ,
+#cm-nav li:hover ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul {
+ z-index: 999;
+ position: absolute;
+ display: none
+}
+
+#cm-nav li:hover ul ,
+#cm-nav li li:hover ul ,
+#cm-nav li li li:hover ul ,
+#cm-nav li li li li:hover ul ,
+#cm-nav li li li li li:hover ul ,
+#cm-nav li li li li li li:hover ul ,
+#cm-nav li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li li li li li li li:hover ul ,
+#cm-nav li li li li li li li li li li li li li li li li li li li li li:hover ul {
+ display: block;
+ margin-left: 100%
+}
+
+#cm-nav ul ul {margin-left: 0px}
+
+#cm-nav ul {
+ top: 0px;
+ left: 0px
+}
+
+#cm-nav a {font-variant: normal}
+
+.MultiFile-wrap a ,
+.MultiFile-wrap  span 
+{
+	color:#000000;
+}
+.PanelUploader
+{
+	color:#000000;
+}
+
+.PanelUploader div 
+{
+	color:#000000;
+}
+
+.paddBot11 {
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.paddRt14 {
+    padding-right: 14px;
+}
+/*///end css for cms */
+
+#header{
+	background-attachment: ;
+	background-origin: border-box;
+	background-clip: border-box;
+	background-size:auto;
+	display: block;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	outline-width: 0px;
+}
+#img{
+	display: block;
+	position: relative;
+	width: 160px;
+	height: 160px;
+}
+.view{
+  background-image: url('../images/backO.png');
+  background-attachment: fixed;
+}
+.back{
+	background-image: url('../images/back3.jpg');
+	background-attachment: fixed;
+}
+#sub-floor {
+	position: relative;
+	width: 1005;
+	height: 50px;
+    color: #AAA;
+    background: #031634 none repeat scroll 0% 0%;
+    padding: 10px 0px;
+}
+.social:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/ 
+ #social-fb:hover{
+     color: #3B5998;
+ }
+ #social-tw:hover{
+     color: #4099FF;
+ }
+ #social-gp:hover{
+     color: #d34836;
+ }
+ #social-em:hover{
+     color: #f39c12;
+ }
+#sub-floor{
+	position: absolute;
+	bottom: -33%;
+	width: 100%;
+	left: 0;
+}
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+}
+.footer-heading{
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+}
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+.home-img {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.home-img p {
+    margin-top: 15px;
+    color: #555;
+}
+.more-detail {
+    padding: 10px 20px;
+    background-color: MidnightBlue;
+    font-weight: bold;
+    color: white;
+    border-radius: 0;
+    transition: .2s;
+    margin: 160px;
+}
+.more-detail:hover, .more-detail:focus {
+    border: 1px solid SlateGrey;
+    background-color: SlateGrey;
+    color: white;
+}
+.more-detail a{
+  text-decoration: none;
+  color: white;
+} 
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    border: 0;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    z-index: 10;
+}
+.navbar li a, .navbar .navbar-brand { 
+    color: MidnightBlue !important;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.navbar-nav li a:hover {
+    background-color: white !important;
+}
+.dropdown-menu li a {
+    color: MidnightBlue !important;
+    font-weight: bold;
+}
+.dropdown-menu li a:hover {
+    background-color: white !important;
+}
+footer {
+    color: #f5f5f5;
+    padding: 32px;
+}
+footer a {
+    color: #f5f5f5;
+}
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}  
+#myNavbar{
+  display: block;
+  position: relative;
+  top: 140px;
+}
+/*.allDestination-div{
+  display: block;
+  position: relative;
+  top: 200px;
+}*/
+/*.main-div{
+    display: block;
+    position: relative;
+    top: 190px;
+}*/
+.hr{
+    display: block;
+    position: relative;
+    top: -50px;
+    width:100%;
+    height: 5px;
+    float: left;
+    border: none;
+    margin-bottom:0px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 3px;
+  left: 13px;
+  right: 0;
+  height: 96%;
+  width: 95%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url('../images/overlay.jpg');
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.home-img:hover .overlay {
+  opacity: 1;
+}
+.address{
+    list-style: none;
+    list-style-type: none;
+}
+.address li{
+    list-style: none;
+    list-style-type: none;
+    font-size: 13px;
+}
+.nav-tabs > li > a{
+    cursor:pointer;
+}
+.nav-tabs li a span:hover {
+    color: red;
+    cursor:pointer;
+}
+
+/* <img src="../images/joSmall.jpg" alt="jordan">
+<img src="../images/dubaiSmall.jpg" alt="dubi">
+<img src="../images/egyptSmall02.jpg" alt="egypt">
+
+<img src="../images/dubai2.jpg" alt="dubi">
+<img src="../images/eygpt2.jpg" alt="egypt">
+<img src="../images/Jordan2.jpg" alt="jordan">*/
+
+
+
+.ribbon {
+ font-size: 16px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 108%; 
+ position: relative;
+ /*background: #ba89b6;*/
+ background-image: url('../images/back3.jpg');
+ color: #000;
+ text-align: center;
+ top: -110px;
+ left: -15px;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid MidnightBlue;
+ z-index: -1;
+}
+/*.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}*/
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: MidnightBlue transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+/*packages css*/
+.bottomContainer{
+   margin-bottom: 50px;
+}
+.bottomFooter{
+  margin-top: 0;
+}
+
+.imgslider{
+  margin:0 auto;
+  width: 400px;
+  height: 400px;
+  max-height:400px;
+}
+
+/*jordan css*/
+.textt{
+ width:250px; 
+ height:215px; 
+ background:#FFF;
+ opacity:0;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+   } 
+.pic:hover .textt{ 
+  opacity:0.7;
+  text-align:center;
+  color:#000000;
+  font-size:25px;
+  font-weight:700;
+  font-family:"Times New Roman", Times, serif;
+  padding:50px;
+ }
+
+ /*jordan tours in mainpage css*/
+
+.jordanImg { height:300px}
+
+
+.jordanDiv{
+    border-top:10px;
+    margin-bottom:30px;
+    padding-bottom: 20px; 
+
+    /*background:#c4e17f;*/
+    /*background-image:-webkit-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);background-image:-moz-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);background-image:-o-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);background-image:linear-gradient(to right,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4)*/
+}
+
+.jordanLi> .fff .caption { 
+    background:#fff !important; 
+    padding:10px
+}
+
+ul.jordanUl { 
+    margin-bottom: 20px;
+}
+
+
+
+/*/* Thumbnail Box */
+.jordanH {
+    color: #444;
+}
+
+
+.jordanLi{ list-style-type:none;}
+.jordanCar{margin-top:5px; margin-bottom:10px;}
+.jCar{margin-top:5px; margin-bottom:10px; padding-bottom:5px; height:300px}
+.combinedDiv{
+    border-top:10px;
+    margin-bottom:90px;
+    padding-bottom:10px; 
+  
+}
+
+.s {
+  background:#fff !important; 
+    padding:10px
+}
+
+/*enquiry css*/
+.enquiry .well{
+  background: #ffe6f2;
+}
+.content{
+  position:relative ;
+}

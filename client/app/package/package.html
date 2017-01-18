@@ -1,0 +1,46 @@
+<div ng-include="'../header.html'">                    
+</div>
+<div class="container main-div" >
+  <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>All Packages: 
+                    <small>{{data.length}}, </small>
+                  <small>  Page: {{currentPage}}</small>
+                </h4>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row" dir-paginate="package in data | itemsPerPage: pageSize" current-page="currentPage">
+        <hr>
+            <div class="col-md-4" >
+                <a href="/#/packages/{{package.type}}/{{package._id}}">
+
+                    <img  style="width:320px; height:250px ;"  class="img-responsiv img-thumbnail animated fadeInDown " src="{{package.mainPhoto}}" alt="">
+                </a>
+            </div>
+            <div class="col-md-8">
+                <h3><p class="text-primary">{{package.packageName}}</p></h3>
+                <p>{{package.outline}}</p>
+                <h4><p class="text-right">From <strong>{{package.price}}$</strong></p></h4>
+                <a class="btn btn-primary" href="/#/packages/{{package.type}}/{{package._id}}">Package Details<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        <!-- Pagination -->
+    
+          <div class="text-center">
+          <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="../lib/angularUtils-pagination/dirPagination.tpl.html"></dir-pagination-controls>
+          </div>
+        
+
+    
+
+    </div>
+    <div  ng-include="'../footer.html'">                    
+</div>

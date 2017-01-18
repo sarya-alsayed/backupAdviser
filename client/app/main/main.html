@@ -1,0 +1,147 @@
+<div ng-include="'../header.html'">                    
+</div>
+<div id="myCarousel" class="carousel slide main-div" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../images/madinat-jumeirah-al-qasr-exterior-01-hero.jpg" alt="jordan" style="height: 560px; max-height: 560px">
+      <div class="carousel-caption">
+        <h3>DUABI</h3>
+        <p>Thank you, DUABI - A tour you won't forget.</p>
+      </div> 
+    </div>
+    <div class="item">
+      <img src="../images/madinat-jumeirah-full-resort-herov2.jpg" alt="dubi" style="height: 560px; max-height: 560px">
+      <div class="carousel-caption">
+        <h3>DUABI</h3>
+        <p>Thank you, DUABI - A tour you won't forget.</p>
+      </div> 
+    </div>
+    <div class="item">
+      <img src="../images/78b53543401e7739f13e23847a30e02e.jpg" alt="egypt" style="height: 560px; max-height: 560px">
+      <div class="carousel-caption">
+        <h3>JORDAN</h3>
+        <p>Thank you, JORDAN - A tour you won't forget.</p>
+      </div> 
+    </div>
+     <div class="item">
+      <img src="../images/egyptian-cityscapes-pyramids-2400x1350-wallpaper.jpg" alt="egypt" style="height: 560px; max-height: 560px">
+      <div class="carousel-caption">
+        <h3>EGYPT</h3>
+        <p>Thank you, EGYPT - A tour you won't forget.</p>
+      </div> 
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<hr class="back hr">
+<h2 align="center" class="text-primary">City Breaks</h2><br>
+<div class="row text-center">
+  <div class="col-sm-4 col-sm-offset-2">
+    <div class="home-img thumbnail back">
+      <img style="height:275px ;width:500px;" src='{{first.mainPhoto}}' alt="{{first.packageName}}">
+      <div class="overlay">
+        <button class="more-detail btn"><a href="/#/packages/{{first.type}}/{{first._id}}"> More details</a></button>
+      </div>
+      <p style="font-size: 20px; color: MidnightBlue"><strong>{{first.packageName}}</strong></p>
+      <!-- <p style="font-size: 18px; color: MidnightBlue">Fri. 27 November 2015</p>  -->
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="home-img thumbnail back">
+      <img style="height:275px ;width:500px;" src="{{second.mainPhoto}}" alt="{{second.packageName}}">
+      <div class="overlay">
+        <button class="more-detail btn"><a href="/#/packages/{{second.type}}/{{second._id}}">More details</a></button>
+      </div>
+      <p style="font-size: 20px; color: MidnightBlue"><strong>{{second.packageName}}</strong></p>
+      <!-- <p style="font-size: 18px; color: MidnightBlue">Sat. 28 November 2015</p> -->
+    </div>
+  </div>
+  <div class="col-sm-4 col-sm-offset-2">
+    <div class="home-img thumbnail back">
+      <img style="height:275px ;width:500px;" src=".{{third.mainPhoto}}" alt="{{third.packageName}}">
+      <div class="overlay">
+        <button class="more-detail btn"><a href="/#/packages/{{third.type}}/{{third._id}}">More details</a></button>
+      </div>
+      <p style="font-size: 20px; color: MidnightBlue"><strong>{{third.packageName}}</strong></p>
+      <!-- <p style="font-size: 18px; color: MidnightBlue">Sun. 29 November 2015</p> -->
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="home-img thumbnail back">
+      <img style="height:275px ;width:500px;" src="{{fourth.mainPhoto}}" alt="{{fourth.pakageName}}">
+      <div class="overlay">
+        <button class="more-detail btn"><a href="/#/packages/{{fourth.type}}/{{fourth._id}}">More details</a></button>
+      </div>
+      <p style="font-size: 20px; color: MidnightBlue"><strong>{{fourth.packageName}}</strong></p>
+      <!-- <p style="font-size: 18px; color: MidnightBlue">Sat. 28 November 2015</p> -->
+    </div>
+  </div>
+</div>
+<p class="text-right"><a href="/#/packages/city-breaks" class="btn btn-info">Click For More City Breaks</a></p>
+<hr style="height: 20px; display: block;position: relative;top: -46px margin-top:10px;" class="back">
+<h2 align="center" class="text-primary">Tours In Jordan</h2><br>
+<div class="col-xs-12 jordanDiv back">  
+        <carousel class="jordanCar">
+        <slide ng-repeat="arr in chunkedSlides" active="slide.active">
+                    <ul class="thumbnails jordanUl">
+                        <li class="col-sm-3 jordanLi" ng-repeat="package in arr track by $index">
+                <div class="fff">
+                <div class="thumbnail">
+                  <a href="/#/packages/jordan-tours/{{package._id}}"><img class="jordanImg" style="height:200px; max-height:200px" ng-src="{{package.mainPhoto}}" alt=""></a>
+                </div>
+                <div class="caption" style="height:150px;">
+                  <h4 class="jordanH">{{package.packageName}}</h4>
+                  <p id="words">{{package.outline}}</p>
+                  <a class="btn btn-mini" href="/#/packages/jordan-tours/{{package._id}}">» Read More</a>
+                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    </slide>
+                    </carousel>
+        
+</div><!-- /.col-xs-12 --> 
+<br/>         
+
+<hr style="height: 5px; display: block;position: relative;top: -46px margin-top:10px;" class="back">
+<h2 align="center" class="text-primary">Combined Tours</h2><br>
+<div class="col-xs-12 combinedDiv back">  
+        <carousel  class="jCar">
+        <slide ng-repeat="arr in chunkedSlides1" active="slide.active">
+                    <ul class="thumbnails jordanUl">
+                        <li class="col-sm-3 jordanLi" ng-repeat="package in arr track by $index">
+          
+    <a href="/#/packages/combined-tours/{{package._id}}"><img src="{{package.mainPhoto}}" alt="{{package.packageName}}"  height="275px"></a>
+    <h1 class="ribbon">
+       <strong class="ribbon-content">{{package.packageName}} | {{package.price}}$</strong>
+    </h1>
+
+  
+                        </li>
+                    </ul>
+                    </slide>
+                    </carousel>
+        
+</div><!-- /.col-xs-12 --> 
+
+<div class="row" style="margin-top:10px">
+ <br/>
+ <br/>
+</div>
+<div ng-include='"../footer.html"'></div>
